@@ -1,6 +1,3 @@
-provider "alicloud" {
- region = "cn-beijing"
-}
 # 安全组
 resource "alicloud_security_group" "group" {
  name = "slb-test"
