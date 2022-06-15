@@ -13,7 +13,6 @@ data "alicloud_security_groups" "default" {
 // 查询可用实例类型
 data "alicloud_instance_types" "default" {
  // 可用区
- availability_zone = data.alicloud_vswitches.default.vswitches.0.zone_id
  cpu_core_count = var.cpu_core_count
  memory_size  = var.memory_size
 }
